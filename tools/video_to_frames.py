@@ -1,6 +1,6 @@
 import cv2
 
-video_name = 'test2.mp4'
+video_name = 'test.mp4'
 cap = cv2.VideoCapture('video/' + video_name)
 
 
@@ -11,6 +11,7 @@ while cap.isOpened():
     ret, frame = cap.read()
 
     if frame_id > 200:
+
         cv2.imwrite('images/dataset/'+ str(frame_id) + ".jpg", frame)
         # cv2.imshow("frame", frame)
     if frame_id > 1000:
