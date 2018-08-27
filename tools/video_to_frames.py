@@ -10,11 +10,11 @@ while cap.isOpened():
 
     ret, frame = cap.read()
 
-    if frame_id > 200:
+    if frame_id > 2001:
 
         cv2.imwrite('images/dataset/'+ str(frame_id) + ".jpg", frame)
         # cv2.imshow("frame", frame)
-    if frame_id > 1000:
+    if frame_id > 2500:
         break
     frame_id += 1
 

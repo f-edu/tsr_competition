@@ -30,7 +30,7 @@ def load_dataset(image_dir):
 
     return im_list
 
-def load_objects(im_list):
+def load_objects(im_list, image_dir):
 
     object_list = []
 
@@ -38,7 +38,7 @@ def load_objects(im_list):
         img_id = img[0]
         frame = img[1]
 
-        e = pars.parse('data/test/annotations/xmls/' + img_id + '.xml')
+        e = pars.parse(image_dir + '/annotations/xmls/' + img_id + '.xml')
 
         root = e.getroot()
 
