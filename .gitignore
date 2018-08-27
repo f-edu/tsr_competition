@@ -3,4 +3,6 @@
 .idea/
 data/
 tools/images
+images
+annotations
 tools/video

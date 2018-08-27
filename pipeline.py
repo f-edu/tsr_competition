@@ -34,6 +34,9 @@ def predict(frame):
     и координат углов знака (xmin,ymin, xmax, ymax) - координаты левого верхнего угла и
     правого нижнего угла знака
     """
+
+    # TODO реализуйте детектирование и распознавание знака внутри этой функции.
+
     predicted_label = [['a_unevenness', [129, 153, 194, 225]], ['no_entry', [448, 159, 554, 305]]]
     # predicted_label = [['a_unevenness', [129, 153, 194, 225]], ['no_entry', [448, 159, 554, 305]], ['no_entry', [192, 141, 249, 209]]]
     # predicted_label = [['way_out', [24, 144, 65, 188]], ['no_entry', [192, 141, 249, 209]], ['way_out', [140, 144, 175, 188]], ['no_drive', [256, 142, 310, 212]]]
@@ -122,7 +125,7 @@ def get_misclassified_images(test_images):
 
 if __name__ == '__main__':
     # Загрузка данных
-    TRAIN_OBJECTS_LIST, TEST_OBJECTS_LIST, VAL_OBJECTS_LIST = load_data()
+    (TRAIN_OBJECTS_LIST, TEST_OBJECTS_LIST, VAL_OBJECTS_LIST) = load_data()
 
     # [1] Пример для 1 изображения
     # test_image = TEST_OBJECTS_LIST[3][0]
