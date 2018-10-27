@@ -1,1 +1,1 @@
-# hackatonEducationalCity
+# tsr_competition
